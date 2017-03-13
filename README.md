@@ -1,4 +1,4 @@
-# wkhtmltopdf
+# wkpdfserver
 -----
 Creating PDFs is a deceptively simple problem.  It seems like a well defined problem.  It's a ubiquitous format and they are static. We use PDFs every day and know how they should look and behave.
 
