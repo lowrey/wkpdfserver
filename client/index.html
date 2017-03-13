@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js"></script>
+    <script type="text/javascript" src="js/download.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>wkpdf client</title>
+</head>
+
+<body>
+    <div class="is-hidden modal-overlay" id="modal-overlay-1">
+        <div class="modal-body">
+            <span class="button-close">×</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">HTML</h3>
+            </div>
+            <div class="panel-body">
+                <div id="editor"></div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" onclick="submit()">
+                Make PDF
+            </button>
+            <button type="button" class="btn btn-primary" onclick="preview()">
+                Preview
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

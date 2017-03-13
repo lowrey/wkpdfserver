@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    body {
+        font-family: Helvetica, Arial, sans-serif !important;
+    }
+    
+    .container {
+        width: 95%;
+    }
+    
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .header {
+        padding-bottom: 10px;
+        border-top: 2px solid #002D62;
+        /* color: #002D62; */
+        color: gray;
+    }
+    
+    </style>
+    <script>
+    function onload() {
+        var paramsObject = {};
+        window.location.search.substring(1).split('&').forEach(function(param) {
+            var key = param.split('=')[0];
+            var value = decodeURI(param.split('=')[1]);
+            paramsObject[key] = value;
+        });
+        document.querySelector('.page').innerHTML = paramsObject.page;
+        document.querySelector('.topage').innerHTML = paramsObject.topage;
+    }
+    </script>
+</head>
+
+<body onload="onload()">
+    <div class="container">
+        <div class="row header">
+            <span style="float:right">Page <span class="page"></span> of <span class="topage"></span>
+        </div>
+    </div>
+</body>
+
+</html>
